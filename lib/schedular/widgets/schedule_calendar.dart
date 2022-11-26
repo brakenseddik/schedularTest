@@ -134,8 +134,13 @@ class _ScheduleCalendarState extends State<ScheduleCalendar> {
                         scrollDirection: Axis.horizontal,
                         itemExtent: 165,
                         itemBuilder: (_, index) {
-                          return const Center(
-                            child: Text(
+                          return Container(
+                            alignment: Alignment.center,
+                            margin: EdgeInsets.all(8.0),
+                            decoration: BoxDecoration(
+                                color: Colors.pink.shade200,
+                                borderRadius: BorderRadius.circular(8.0)),
+                            child: const Text(
                               '3',
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.w700),
